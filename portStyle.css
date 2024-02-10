@@ -173,6 +173,10 @@ main article {
 .ed1 article {
     width: 30%;
     padding: 20px 10px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .ed1 img {
