@@ -285,6 +285,16 @@ a {
     margin-top: 10%;
 }
 
+#strelica {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    
+}
+
+
 
 
 @media only screen and (max-width: 1050px) {
