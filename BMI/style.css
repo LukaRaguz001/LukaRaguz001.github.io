@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rezultat,
+main {
+    margin: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    /* min-height: 600px; */
+
+}
+
+
+
+.rezNone {
+    display: none;
+}
+
+.rezultat {
+    position: absolute;
+    min-height: 620px;
+
+}
+
+img {
+    width: 80%;
+}
+
+
+header {
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+
+}
+
+#slider {
+    width: 100%;
+
+}
+
+#spol button {
+    color: white;
+    font-weight: bold;
+}
+
+#male,
+#female,
+#visina,
+#drugi article {
+    background-color: rgb(59, 59, 59);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+
+
+
+}
+
+#drugi article {
+    width: 45%;
+}
+
+#spol,
+#drugi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#male,
+#female {
+    width: 45%;
+
+}
+
+#cal {
+    width: 300px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 20px 0px;
+    font-weight: bold;
+
+}
+
+#spol button:hover,
+#cal:hover {
+    background-color: rgb(91, 91, 91);
+}
+
+#izracun {
+    background-color: rgb(59, 59, 59);
+
+    text-align: center;
+    margin: 100px 20px;
+    border-radius: 20px;
+}

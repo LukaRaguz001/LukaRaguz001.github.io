@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <h1>BMI kalkulator</h1>
+        </header>
+        <section id="spol">
+            <button id="male">
+                <p>Male</p>
+                <img src="slike/Asset 1xxhdpi.png" alt="" width="100%">
+
+            </button>
+            <button id="female">
+                <p>Female</p>
+                <img src="slike/Asset 2xxxhdpi.png" alt="" width="100%">
+
+            </button>
+        </section>
+        <section id="visina">
+            <label for="">Height</label>
+            <h3 id="visinaBr">170 cm</h3>
+            <input type="range" min="50" max="230" value="170" id="slider">
+        </section>
+        <section id="drugi">
+
+
+            <article>
+                <p>Weight</p>
+                <h2 id="tezina">70</h2>
+                <span> <button id="wP">+</button>
+                    <button id="wM">-</button></span>
+
+            </article>
+            <article>
+                <p>Age</p>
+                <h2 id="godine">20</h2>
+                <span><button id="aP">+</button>
+                    <button id="aM">-</button></span>
+
+            </article>
+        </section>
+
+    </main>
+
+    <section id="rezultat" class="rezNone">
+        <header>
+            <h1>BMI kalkulator</h1>
+        </header>
+
+        <section id="izracun">
+            <h2>Izračun</h2>
+            <h3 id="izr">BMI: </h3>
+            <h4 id="ocjena"></h4>
+        </section>
+        <button id="cal" onclick="restart()">RESTART</button>
+    </section>
+
+    <button id="cal" onclick="rezultat(); izracun(); ocjena();">CALCULATE</button>
+
+    <script src="racun.js"></script>
+</body>
+
+</html>
