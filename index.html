@@ -186,6 +186,35 @@
        
     </main>
 
+     <div id="strelica" style="display: none;">
+            <a href="#"><img src="slike/top.png" alt="" width="40px"></a>
+        </div>
+    </main>
+
+    <script>
+        let strelica = document.getElementById("strelica");
+
+        // Ovo će se pokrenuti kada korisnik scroll-uje stranicu
+        window.addEventListener("scroll", function () {
+            // Ako je korisnik scroll-ovao više od 100px, prikaži strelicu, inače je sakrij
+            if (window.scrollY > 100) {
+                strelica.style.display = "block";
+            } else {
+                strelica.style.display = "none";
+            }
+        });
+
+        // Ovo će se pokrenuti kada korisnik klikne na strelicu
+        strelica.addEventListener("click", function () {
+            // Vrati stranicu na vrh (koristi smooth scrolling)
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+    </script>
+
 
     <footer>
         <!-- <p>nesto</p> -->
